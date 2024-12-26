@@ -1,0 +1,231 @@
+body {
+  scroll-behavior: smooth;
+  background-color: #f8f9fa;
+}
+.fade-in {
+  opacity: 0; /* Bắt đầu ẩn */
+  transform: translateY(20px); /* Dịch xuống dưới */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Hiệu ứng chuyển động mượt */
+}
+
+/* Khi phần tử trở nên hiển thị */
+.fade-in.visible {
+  opacity: 1; /* Hiển thị */
+  transform: translateY(0); /* Trả về vị trí ban đầu */
+}
+.navbar {
+  position: fixed;
+  padding-top: 0;
+  padding-bottom: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  transition: background-color 0.3s ease;
+}
+.title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar.transparent {
+  background-color: transparent;
+}
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 1); /* White background with slight opacity */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-link,
+.navbar .title {
+  color: #fff !important; /* White text when transparent */
+  transition: color 0.3s ease;
+}
+.nav-link {
+  margin-right: 20px;
+  text-align: center;
+}
+.navbar.scrolled .nav-link,
+.navbar.scrolled .title {
+  color: #fff !important; /* Black text when scrolled */
+}
+.landing-page {
+  background: url("img/image.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.landing-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Lớp phủ tối mờ */
+  z-index: 1;
+}
+.landing-page h1,
+h5 {
+  position: relative;
+  z-index: 2; /* Đảm bảo text ở trên lớp phủ */
+}
+.landing-page .text-center {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.button-more a {
+  text-decoration: none;
+  color: white;
+}
+.button-more {
+  z-index: 2;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 13rem;
+  height: 13rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -30px;
+  z-index: 10;
+}
+
+.carousel-indicators button {
+  background-color: #666;
+}
+
+.carousel-indicators button.active {
+  background-color: #000;
+}
+.social-links {
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    margin: 0 5px;
+    font-size: 1.5rem;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #000;
+  }
+  
+.material-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.material-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.material-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.material-card .card-body {
+  padding: 15px;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+.material-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.material-card .card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+.material-card .btn {
+  margin-top: 10px;
+  background-color: #1976d2;
+  color: white;
+  transition: background-color 0.3s;
+}
+.material-card .btn:hover {
+  background-color: #1565c0;
+}
+
+.feedback-section {
+  padding: 50px 0;
+}
+.feedback-card {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+.feedback-card img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.feedback-card h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.feedback-card span {
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
+  display: block;
+}
+.feedback-card p {
+  font-size: 16px;
+  color: black;
+  font-style: italic;
+  margin: 0;
+}

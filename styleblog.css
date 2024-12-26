@@ -1,0 +1,124 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f9f9f9;
+    color: #2c3e50;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+.section {
+    padding-top: 60px;
+}
+#navbar {
+    position: fixed;
+    padding-top: 0;
+    padding-bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black; /* Nền đen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f1c40f; /* Màu vàng nhạt */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 0.5rem;
+}
+
+.title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white; /* Font vàng nhạt */
+}
+
+.navbar-nav .nav-link {
+    font-size: 0.9rem;
+    color: #ecf0f1;
+    margin-left: 0.8rem;
+    transition: color 0.3s;
+    padding: 0.5rem 0.75rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1565c0; /* Màu cam nhạt khi hover */
+}
+
+.blog-header {
+    background: #ffffff;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.blog-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.blog-header img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+.blog-content {
+    background: #ffffff;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.blog-content h2 {
+    color: #2980b9;
+    margin-top: 1.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.blog-content ul, .blog-content ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    color: black;
+}
+
+.blog-content ul li, .blog-content ol li {
+    margin-bottom: 0.5rem;
+}
+
+.blog-content a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.blog-content a:hover {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #7f8c8d;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
