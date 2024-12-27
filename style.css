@@ -229,3 +229,29 @@ h5 {
   font-style: italic;
   margin: 0;
 }
+
+.contact-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #343a40;
+  text-align: center;
+}
+.contact-form button {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border: none;
+}
+.contact-form button:hover {
+  background: linear-gradient(90deg, #0056b3, #007bff);
+}
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
